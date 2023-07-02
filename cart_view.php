@@ -1,21 +1,21 @@
 <?php include 'includes/session.php'; ?>
 <?php include 'includes/header.php'; ?>
 
-<?php
-	if (isset($_SESSION['cart'])){
-		$conn = $pdo->open();
 
-		try{
-			$stmt = $conn->prepare("SELECT * FROM cart WHERE id=:id");
-			$stmt->execute(['id'=>$_SESSION['cart']]);
-			$cart = $stmt->fetch();
-		}
-		catch(PDOException $e){
-			echo "There is some problem in connection: " . $e->getMessage();
-		}
+	<!-- // if (isset($_SESSION['cart'])){
+	// 	$conn = $pdo->open();
 
-		$pdo->close();}
-?>
+	// 	try{
+	// 		$stmt = $conn->prepare("SELECT * FROM cart WHERE id=:id");
+	// 		$stmt->execute(['id'=>$_SESSION['cart']]);
+	// 		$cart = $stmt->fetch();
+	// 	}
+	// 	catch(PDOException $e){
+	// 		echo "There is some problem in connection: " . $e->getMessage();
+	// 	}
+
+	// 	$pdo->close();} -->
+
 <body class="hold-transition skin-blue layout-top-nav">
 <div class="wrapper">
 
@@ -39,6 +39,8 @@
 		        				<th>Price</th>
 		        				<th width="20%">Quantity</th>
 		        				<th>Subtotal</th>
+								<th>wuaduh</th>
+								<!-- <a class='btn btn-primary' href='sales.php?pay='+pay_id;>Beli</a> -->
 		        			</thead>
 		        			<tbody id="tbody">
 		        			</tbody>
@@ -48,9 +50,6 @@
 	        		<?php
 	        			if (isset($_SESSION['user'])) {
 							// if (isset($_SESSION['cart'])){							
-	        				echo "
-							<a class='btn btn-primary' href='sales.php?pay='+pay_id;>Beli</a>
-	        				";
 	        			}
 	        			else{
 	        				echo "

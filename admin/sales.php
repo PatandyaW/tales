@@ -48,12 +48,11 @@
           <div class="box">
             <div class="box-header with-border">
               <div class="pull-right">
-                <form method="POST" class="form-inline" action="sales_print.php">
+                <form method="POST" class="form-inline">
                   <div class="input-group">
                     <div class="input-group-addon">
                       <i class="fa fa-calendar"></i>
                     </div>
-                    <input type="text" class="form-control pull-right col-sm-8" id="reservation" name="date_range">
                   </div>
                   <button type="submit" class="btn btn-success btn-sm btn-flat" name="print"><span class="glyphicon glyphicon-print"></span> Print</button>
                 </form>
