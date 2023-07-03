@@ -49,7 +49,9 @@
 	        		</div>
 	        		<?php
 	        			if (isset($_SESSION['user'])) {
-							// if (isset($_SESSION['cart'])){							
+							// if (isset($_SESSION['cart'])){	
+								echo "
+								<a class='btn btn-primary' href='sales.php?pay='+pay_id;>Beli</a>	";					
 	        			}
 	        			else{
 	        				echo "
