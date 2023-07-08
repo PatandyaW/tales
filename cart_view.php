@@ -39,7 +39,6 @@
 		        				<th>Price</th>
 		        				<th width="20%">Quantity</th>
 		        				<th>Subtotal</th>
-								<th>wuaduh</th>
 								<!-- <a class='btn btn-primary' href='sales.php?pay='+pay_id;>Beli</a> -->
 		        			</thead>
 		        			<tbody id="tbody">

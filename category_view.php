@@ -36,7 +36,7 @@
 
 		       			try{
 		       			 	$inc = 3;	
-						    $stmt = $conn->prepare("SELECT * FROM products");
+						    $stmt = $conn->prepare("SELECT * FROM products ORDER BY RAND()");
 						    $stmt->execute([]);
 						    foreach ($stmt as $row) {
 						    	$image = (!empty($row['photo'])) ? 'images/'.$row['photo'] : 'images/noimage.jpg';

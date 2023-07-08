@@ -49,7 +49,6 @@
 						</td>
 						
 						<td>Rp. ".number_format($subtotal, 2)."</td>
-						<td><a class='btn btn-primary' href='sales.php?pay='+pay_id;>Beli</a></td>
 						
 					</tr>
 				";

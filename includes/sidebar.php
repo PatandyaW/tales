@@ -33,7 +33,7 @@
 		    	<div class="input-group">
 	                <input type="text" class="form-control">
 	                <span class="input-group-btn">
-	                    <button type="button" class="btn btn-info btn-flat"><i class="fa fa-envelope"></i> </button>
+	                    <button type="submit" formaction= "https://gmail.com/" class="btn btn-info btn-flat"><i class="fa fa-envelope"></i> </button>
 	                </span>
 	            </div>
 		    </form>
